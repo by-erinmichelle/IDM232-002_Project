@@ -2,7 +2,6 @@
 {
     box-sizing: border-box;
     max-width: 100%;
-
 }
 
 /*FONTS*/
@@ -57,7 +56,6 @@ html
     display: -webkit-flex;
 
     width: 100%;
-
 
             flex-flow: column nowrap;
     -webkit-flex-flow: column nowrap;
@@ -287,11 +285,12 @@ main
     padding-bottom: .5rem;
 
     background-image: url('../graphics/background-320.png');
+    background-attachment: fixed;
     -webkit-background-size: cover;
        -moz-background-size: cover;
             background-size: cover;
+
         -ms-background-size: cover;
-        background-attachment: fixed;
 }
 
 main,
@@ -412,7 +411,6 @@ figure
 
     max-height: 18rem;
     margin: 0;
-    margin-bottom: 2rem;
 
             flex-flow: column nowrap;
     -webkit-flex-flow: column nowrap;
@@ -458,7 +456,8 @@ figure
 /*FEATURED WORK*/
 
 .featured-work-content img,
-video, .project-work-content img
+video,
+.project-work-content img
 {
     display: inline-block;
 
@@ -477,18 +476,22 @@ video
 
 /*PROJECT INFO*/
 
-.project-work {
+.project-work
+{
     margin-top: 1rem;
 }
 
-.next-project {
+.next-project
+{
     margin: 2.5rem auto;
+
     text-align: center;
 }
 
 /*CONTACT PAGE*/
 
-.contact-heading, .info-heading
+.contact-heading,
+.info-heading
 {
     font-size: 2rem;
 
@@ -497,7 +500,8 @@ video
     color: #353535;
 }
 
-.contact-text, .info-text
+.contact-text,
+.info-text
 {
     line-height: 1.4;
 
@@ -856,11 +860,13 @@ footer p
     {
         margin-right: 4rem;
     }
-    .contact-heading, .info-heading
+    .contact-heading,
+    .info-heading
     {
         font-size: 2.5rem;
     }
-    .contact-text, .info-text
+    .contact-text,
+    .info-text
     {
         font-size: 1.2rem;
 
@@ -898,13 +904,15 @@ footer p
     }
 
     .featured-work,
-    .project-work, .subnav-portfolio
+    .project-work,
+    .subnav-portfolio
     {
         width: 95%;
         margin: 0 auto;
     }
 
-    .featured-work-content, .subnav-portfolio ul
+    .featured-work-content,
+    .subnav-portfolio ul
     {
            -moz-column-count: 2;
            -moz-column-gap: 2rem;
@@ -915,11 +923,11 @@ footer p
                 column-count: 2;
                 column-gap: 2rem;
     }
-    
-    .next-project {
-    margin: 3.5rem auto;
-    }
 
+    .next-project
+    {
+        margin: 3.5rem auto;
+    }
 }
 
 @media all and (min-width: 750px)
@@ -1127,11 +1135,13 @@ footer p
         width: 85%;
         margin-bottom: 4rem;
     }
-    .contact-heading, .info-heading
+    .contact-heading,
+    .info-heading
     {
         font-size: 3rem;
     }
-    .contact-text, .info-text
+    .contact-text,
+    .info-text
     {
         font-size: 1.3rem;
     }
@@ -1165,13 +1175,16 @@ footer p
                 column-count: 3;
                 column-gap: 2rem;
     }
-    .project-work {
+    .project-work
+    {
         width: 80%;
     }
-    .project-small img {
+    .project-small img
+    {
         width: 48%;
     }
-    .right img {
+    .right img
+    {
         float: right;
     }
     .p-right
@@ -1234,11 +1247,13 @@ footer p
     {
         margin-right: 8rem;
     }
-    .contact-heading, .info-heading
+    .contact-heading,
+    .info-heading
     {
         font-size: 3.5rem;
     }
-    .contact-text, .info-text
+    .contact-text,
+    .info-text
     {
         font-size: 1.4rem;
 
@@ -1324,11 +1339,13 @@ footer p
     {
         margin-right: 15rem;
     }
-    .contact-heading, .info-heading
+    .contact-heading,
+    .info-heading
     {
         font-size: 4rem;
     }
-    .contact-text, .info-text
+    .contact-text,
+    .info-text
     {
         font-size: 1.5rem;
 
@@ -1394,11 +1411,13 @@ footer p
     {
         margin-right: 25rem;
     }
-    .contact-heading, .info-heading
+    .contact-heading,
+    .info-heading
     {
         font-size: 4.5rem;
     }
-    .contact-text, .info-text
+    .contact-text,
+    .info-text
     {
         font-size: 1.8rem;
 
@@ -1534,11 +1553,13 @@ footer p
     {
         height: 6rem;
     }
-    .contact-heading, .info-heading
+    .contact-heading,
+    .info-heading
     {
         font-size: 5.5rem;
     }
-    .contact-text, .info-text
+    .contact-text,
+    .info-text
     {
         font-size: 3rem;
 
