@@ -607,6 +607,12 @@ textarea:focus
     background-color: #353535;
 }
 
+.thanks {
+    text-align: center;
+    background-color: #cddeec;
+    padding: 2rem;
+}
+
 /*ABOUT PAGE*/
 
 .intro

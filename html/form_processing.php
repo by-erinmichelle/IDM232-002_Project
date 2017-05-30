@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
 	<title>CONTACT | ERIN MICHELLE</title>
-	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	<?php echo "<link rel='stylesheet' type='text/css' href='../css/normalize.css'>"?>
+	<?php echo "<link rel='stylesheet' type='text/css' href='../css/stylesheet.css'>"?>
 </head>
 
 <body>
@@ -40,33 +40,13 @@
 				</div>
 
 
-				<p class="contact-heading ff-bold">Let's be friends.</p>
-				
-				<p class="contact-text ff-regular">Interested in working with me? Want to meet up and discuss corgis? Whatever the reason, send me a message!</p>
+				<div class="thanks ff-regular">
+			
+						Thank you, <?php echo $_POST["name"] . "!"; ?><br>
+						Your message has been sent! I'll get back to you shortly.
+				</div>
 
-					<form action="form_processing.php" method="post">
-
-						<fieldset>
-
-							<label class="ff-regular">name</label>
-							<br>
-							<input type="text" name="name" class="text-input">
-
-							<label class="ff-regular">email</label>
-							<br>
-							<input type="text" name="email" class="text-input">
-
-							<label class="ff-regular">message</label>
-							<br>
-							<textarea name="message" class="text-input"></textarea>
-
-							<input type="submit" value="SEND" class="send ff-bold">
-
-						</fieldset>
-
-					</form>
-
-		</main>
+	</main>
 
 		<footer>
 
