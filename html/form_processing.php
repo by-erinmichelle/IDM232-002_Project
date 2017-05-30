@@ -39,11 +39,11 @@
 					</ul>
 				</div>
 
-
 				<div class="thanks ff-regular">
-			
-						Thank you, <?php echo $_POST["name"] . "!"; ?><br>
-						Your message has been sent! I'll get back to you shortly.
+					<?php 
+						$name = $_POST['name']; ?>
+					<p class="thanks-text">Thank you, <?php echo $name; ?><br>
+					Your message has been sent! I'll get back to you shortly.</p>			
 				</div>
 
 	</main>

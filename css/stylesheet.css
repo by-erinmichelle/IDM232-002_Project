@@ -607,10 +607,11 @@ textarea:focus
     background-color: #353535;
 }
 
-.thanks {
+.thanks-text {
     text-align: center;
     background-color: #cddeec;
     padding: 2rem;
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, .5);
 }
 
 /*ABOUT PAGE*/
@@ -753,6 +754,10 @@ footer p
     form
     {
         padding: 1.5rem;
+    }
+    .thanks-text {
+        font-size: 1.5rem;
+        padding: 2.5rem;
     }
 }
 
@@ -902,6 +907,9 @@ footer p
 
         height: 4rem;
         margin-top: 2rem;
+    }
+    .thanks-text {
+        padding: 4.5rem;
     }
     .social img
     {
@@ -1140,6 +1148,9 @@ footer p
     {
         width: 85%;
         margin-bottom: 4rem;
+    }
+    .thanks-text {
+        padding: 6.5rem;
     }
     .contact-heading,
     .info-heading
