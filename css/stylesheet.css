@@ -249,16 +249,16 @@ html
     height: 4px;
 
     content: '';
-    -webkit-transition: all .3s ease-in-out 0s;
-       -moz-transition: all .3s ease-in-out 0s;
-        -ms-transition: all .3s ease-in-out 0s;
-            transition: all .3s ease-in-out 0s;
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
     -webkit-transform: scaleX(0);
        -moz-transform: scaleX(0);
         -ms-transform: scaleX(0);
             transform: scaleX(0);
 
-    background-color: #cddeec;;;
+    background-color: #cddeec;
 }
 
 .nav a:hover:before,
@@ -461,7 +461,6 @@ video,
 {
     display: inline-block;
 
-    width: 100%;
     margin-bottom: 2rem;
 
     box-shadow: 2px 3px 12px rgba(0, 0, 0, .5);
@@ -481,11 +480,49 @@ video
     margin-top: 1rem;
 }
 
+.project-work-content {
+    margin: 1rem auto 0;
+}
+
+.project-work-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .next-project
 {
     margin: 2.5rem auto;
 
     text-align: center;
+}
+
+.next a {
+    text-decoration: none;
+    color: #353535;
+}
+
+.next:after
+{
+    position: relative;
+
+    display: block;
+
+    width: 0;
+    margin: auto;
+
+    content: '';
+
+    border-bottom: 4px solid #cddeec;
+    transition: all .3s ease-in-out;
+}
+
+.next a:hover {
+    cursor: pointer;
+}
+.next:hover:after
+{
+    width: 100%;
 }
 
 /*CONTACT PAGE*/
@@ -501,7 +538,7 @@ video
 }
 
 .contact-text,
-.info-text
+.info-text, .next
 {
     line-height: 1.4;
 
@@ -877,7 +914,7 @@ footer p
         font-size: 2.5rem;
     }
     .contact-text,
-    .info-text
+    .info-text, .next
     {
         font-size: 1.2rem;
 
@@ -937,7 +974,18 @@ footer p
                 column-count: 2;
                 column-gap: 2rem;
     }
-
+    .project-work-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+    }
+    .photo_0, .photo_3 {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        max-width: 75%;
+        margin: 0 auto;
+    }
     .next-project
     {
         margin: 3.5rem auto;
@@ -974,6 +1022,9 @@ footer p
     {
         line-height: 6rem;
     }
+    .photo_0, .photo_3 {
+        max-width: 50%;
+    }
     .intro
     {
         line-height: 6.5rem;
@@ -1007,14 +1058,13 @@ footer p
     {
         height: 128px;
     }
+    .footer-design
+    {
+    padding-top: 7rem
+    }
     .footer-design img
     {
         height: 128px;
-    }
-
-    .footer-design
-    {
-        padding-top: 7rem;
     }
 }
 @media all and (min-width: 825px)
@@ -1158,7 +1208,7 @@ footer p
         font-size: 3rem;
     }
     .contact-text,
-    .info-text
+    .info-text, .next
     {
         font-size: 1.3rem;
     }
@@ -1195,14 +1245,6 @@ footer p
     .project-work
     {
         width: 80%;
-    }
-    .project-small img
-    {
-        width: 48%;
-    }
-    .right img
-    {
-        float: right;
     }
     .p-right
     {
@@ -1270,7 +1312,7 @@ footer p
         font-size: 3.5rem;
     }
     .contact-text,
-    .info-text
+    .info-text, .next
     {
         font-size: 1.4rem;
 
@@ -1362,7 +1404,7 @@ footer p
         font-size: 4rem;
     }
     .contact-text,
-    .info-text
+    .info-text, .next
     {
         font-size: 1.5rem;
 
