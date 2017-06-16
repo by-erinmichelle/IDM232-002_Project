@@ -36,10 +36,10 @@ if (!$result) {
 
 			<div class="subnav-large ff-bold"> 
 				<ul>
-					<li><a href="projects.php?category=Graphic">graphic</a></li>
-										<li><a href="projects.php?category=Web">web</a></li>
-										<li><a href="projects.php?category=Photography">photography</a></li>
-										<li><a href="projects.php?category=Art">art</a></li>
+					<li><a href="graphic.php">graphic</a></li>
+					<li><a href="web.php">web</a></li>
+					<li><a href="photography.php">photography</a></li>
+					<li><a href="art.php">art</a></li>
 				</ul>
 			</div>
 							
@@ -48,10 +48,10 @@ if (!$result) {
 						<li class="current-page"><a href="portfolio.php">portfolio</a>
 						<div class="subnav"> 
 									<ul>
-										<li><a href="projects.php?category=Graphic">graphic</a></li>
-										<li><a href="projects.php?category=Web">web</a></li>
-										<li><a href="projects.php?category=Photography">photography</a></li>
-										<li><a href="projects.php?category=Art">art</a></li>
+										<li><a href="graphic.php">graphic</a></li>
+										<li><a href="web.php">web</a></li>
+										<li><a href="photography.php">photography</a></li>
+										<li><a href="art.php">art</a></li>
 									</ul>
 							</div></li>
 							<li class="unactive"><a href="about.php">about</a></li>
